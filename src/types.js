@@ -1,0 +1,6 @@
+export const LOGIN_USER = 'LOGIN_USER';
+export const LOGOUT_USER = 'LOGOUT_USER';
+export const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS'
+export const ADD_QUESTION = 'ADD_QUESTION'
+export const SAVE_QUESTION = 'SAVE_QUESTION'
+export const RECEIVE_USERS = 'RECEIVE_USERS'
