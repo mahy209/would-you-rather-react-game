@@ -1,38 +1,241 @@
-.App {
+.container{
+    width: max-content;
+    height: 70px;
+    align-items: center;
+    margin:0 auto;
+    text-align:center;
+}
+
+.usersSign{
+    position: relative;
+    cursor: pointer;
+}
+.topnavBar{
+  margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
+  border-bottom-style: solid;
+  border-bottom-color: #0099cc;
+  border-bottom-width: 2px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link, .logout, a {
+    margin-left:30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color:black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.link:hover, .logout:hover, a:hover {
+    background-color:#0099cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
   }
+  
+.link:visited, .logout.link:visited, a:visited{
+  color:black
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  button{
+    margin-top: 20px;
+    background-color: #0099cc; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 300px;
+    border-right-color: white;
+    border-right: 3px;
   }
-  to {
-    transform: rotate(360deg);
+  .topLogout{
+    display: initial;
+    border-left: beige;
+    margin-left: 150px;
   }
-}
+  .imgLogout{
+    display: initial;
+    margin-left: 20px;
+  }
+  .logout{
+    background-color: #0099cc; 
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  .tablink {
+    margin-left:50px;
+    text-align:center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top:-20px;
+  }
+
+  .contentQ{
+    width: 230px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .asks{
+    background-color: #0099cc;
+    margin: 0;
+    text-align: initial;
+  }
+  .tabcontent, .tabcontent2{
+    margin-top: 10px;
+    margin: 0;
+    text-align: initial;
+  }
+  .tabcontent2{
+    border-style: groove;
+    width: 500px;
+  }
+  li{
+    list-style:none;
+    border-style: groove;
+    margin-top:inherit;
+    margin-bottom: 10px;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;  
+
+  }
+  .item1 {
+    grid-column: 1;
+    margin:auto;
+  }
+  .item2{
+    text-align: initial;
+    margin-left: 10px;
+  }
+  .item2 >p, .question >div>p, .item2U>p{
+    font-weight: bold;
+  }
+  
+  .question{
+    display: inline;
+  }
+  
+  .buttonPoll{
+    background-color: white;
+    color: #0099cc;
+    border-style: solid;
+    border-color: #0099cc;
+  }
+  .buttonPoll:hover{
+    background-color: #0099cc;
+    color: white;
+  }
+  
+  .buttonAns{
+    background-color: white;
+    color: #0099cc;
+    border-style: double;
+    border-color:#0099cc;
+  }
+  .active{
+    border-style: groove;
+    border-color: #0099cc;
+    color: black;
+  }
+  .buttonAns:hover, .buttonAns::selection, .buttonAns:active{
+    background-color: #0099cc;
+    color: white;
+  }
+  
+  .options {
+    margin:auto
+  }
+  .btnSubmitQ{
+    margin-top: 16px;
+  }
+ .pResults{
+   margin: auto;
+   font-weight: bold;
+   height: 30px;
+ }
+ .divR{
+   border-style: groove;
+   text-align: center;
+   width: 310px;
+   margin-bottom: 10px;
+ }
+ .imgR{
+   display: flex;
+ }
+ .item1U{
+  text-align: initial;
+  display: contents;
+  
+ }
+ .item2U{
+   padding: inherit;
+   border-right-style: solid;
+   border-right-width: thin;
+ }
+ .item2U>p{
+  background-color: #0099cc;
+ }
+ .item3U{
+  margin: auto;
+  margin-left: 20px;
+ }
+ span{
+   padding: inherit;
+ }
+ .span2{
+   margin-left: 14px;
+ }
+ .score{
+    height: 100px;
+    margin-right: 10px;
+    text-align: center;
+    border-style: groove;
+    width: 70px;
+ }
+ .textScore{
+  background: #E5DDDB;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+ }
+ .pointsScore{
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #0099cc;
+  font-size: x-large;
+ }
+ .divnavBar{
+   margin:inherit;
+ }
+ .pQuestion{
+  background-color: #0099cc;
+  height: 25px;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+ }
+ .divNQ{
+  border-style: groove;
+  height: 320px;
+  width: 385px;
+ }
+ #op1, #op2{
+   width:360px;
+   border-radius: 25px;
+ }
+ .pNQ{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: #0099cc;
+  display: grid;
+  font-weight: bolder;
+ }
