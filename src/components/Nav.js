@@ -46,7 +46,7 @@ export default function Nav(props){
             }
            
             </div>
-            <LoadingBar style={{ backgroundColor: '#0099cc', height: '5px'}}/>
+            <LoadingBar style={{ backgroundColor: '#0099cc', height: '8px'}}/>
         </nav> 
         
     )

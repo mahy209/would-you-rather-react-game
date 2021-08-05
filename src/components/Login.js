@@ -40,7 +40,7 @@ class Login extends Component{
     render(){
         const options=[]
         this.props.users.map((u)=>options.push({value: u, 
-            label: <div className='usersSign'><img src={u.avatarURL} alt=''width="20" height="20"/> {u.name}</div>}
+            label: <div className='usersSign'><img src={u.avatarURL} alt=''width="30" height="30"/> {u.name}</div>}
         ))
         if(this.state.submited){
             return <Redirect to='/'/>
@@ -52,7 +52,7 @@ class Login extends Component{
                     <p>Please sign in to continue</p>
                 
                 </div> 
-                <img src={logo} className="App-logo" alt="logo" width="80" height="90"/> 
+                <img src={logo} className="App-logo" alt="logo" width="120" height="120"/> 
                 <p>Sign in</p>
                 
                 <Select options={options} value={this.state.user} onChange={this.handleChange}/>
