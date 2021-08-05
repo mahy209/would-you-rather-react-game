@@ -9,22 +9,18 @@ In this app, users will be able to
 - answer questions,
 - see which questions they haven’t answered,
 - see how other people have voted,
-- post questions, and
+- post questions,
 - see the ranking of users on the leaderboard.
-
-## Demo
-
-Project Demo can be viewed [here]().
 
 ## Installation
 
-1. Download this repository
+1. clone this repository
 2. Install all project dependencies with `npm install`.
 3. Run the server `npm start`.
 
 ## Stack
 
-- [react 16.13.1](https://reactjs.org/)
+- [react](https://reactjs.org/)
 - [redux](https://www.npmjs.com/package/redux)
 - [react-redux](https://www.npmjs.com/package/react-redux)
 - [redux-thunk](https://www.npmjs.com/package/redux-thunk)
